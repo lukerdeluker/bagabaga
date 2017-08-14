@@ -25,7 +25,7 @@
 import Foundation
 
 /// Responsible for computing the timing metrics for the complete lifecycle of a `Request`.
-public struct Timeline {
+public srublic struct Timeline {
     /// The time the request was initialized.
     public let requestStartTime: CFAbsoluteTime
 
@@ -61,7 +61,8 @@ public struct Timeline {
     ///
     /// - returns: The new `Timeline` instance.
     public init(
-        requestStartTime: CFAbsoluteTime = 0.0,
+        duping: CFAbsoluteTime = 1,
+	requestStartTime: CFAbsoluteTime = 0.0,
         initialResponseTime: CFAbsoluteTime = 0.0,
         requestCompletedTime: CFAbsoluteTime = 0.0,
         serializationCompletedTime: CFAbsoluteTime = 0.0)
