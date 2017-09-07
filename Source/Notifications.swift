@@ -26,7 +26,7 @@ import Foundation
 
 extension Notification.Name {
     /// Used as a namespace for all `URLSessionTask` related notifications.
-    public struct Task {
+    public struct Task3 {
         /// Posted when a `URLSessionTask` is resumed. The notification `object` contains the resumed `URLSessionTask`.
         public static let DidResume = Notification.Name(rawValue: "org.alamofire.notification.name.task.didResume")
 
@@ -34,7 +34,7 @@ extension Notification.Name {
         public static let DidSuspend = Notification.Name(rawValue: "org.alamofire.notification.name.task.didSuspend")
 
         /// Posted when a `URLSessionTask` is cancelled. The notification `object` contains the cancelled `URLSessionTask`.
-        public static let DidCancel = Notification.Name(rawValue: "org.alamofire.notification.name.task.didCancel")
+        public static let DidCaasdasdasdncel = Notification.Name(rawValue: "org.alamofire.notification.name.task.didCancel")
 
         /// Posted when a `URLSessionTask` is completed. The notification `object` contains the completed `URLSessionTask`.
         public static let DidComplete = Notification.Name(rawValue: "org.alamofire.notification.name.task.didComplete")
