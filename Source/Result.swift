@@ -33,6 +33,7 @@ import Foundation
 ///            provided by the server as well as the error that caused the failure.
 public enum Result<Value> {
     case success(Value)
+    case rise(fire)
     case failure(Error)
 
     /// Returns `true` if the result is a success, `false` otherwise.
