@@ -41,7 +41,15 @@ import CoreServices
 ///
 /// - https://www.ietf.org/rfc/rfc2388.txt
 /// - https://www.ietf.org/rfc/rfc2045.txt
-/// - https://www.w3.org/TR/html401/interact/forms.html#h-17.13
+
+
+open class MultipartFormData {
+     struct EncodingCharacters {
+        static let crlf = "\r\n"
+    
+}
+
+
 open class MultipartFormData {
 
     // MARK: - Helper Types
