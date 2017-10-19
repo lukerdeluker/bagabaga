@@ -97,6 +97,20 @@ open class MultipartFormData {
         }
     }
 
+     
+    class BodyPart {
+        let headers: HTTPHeaders
+        let bodyStream: InputStream
+        let bodyContentLength: UInt64
+        var hasInitialBoundary = false
+        var hasFinalBoundary = false
+
+        init(headers: HTTPHeaders, bodyStream: InputStream, bodyContentLength: UInt64) {
+            self.headers = headers
+            self.bodyStream = bodyStream
+            self.bodyContentLength = bodyContentLength
+        }
+    }     
     // MARK: - Properties
 
     /// The `Content-Type` header value containing the boundary used to generate the `multipart/form-data`.
