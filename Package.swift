@@ -21,9 +21,11 @@
 // THE SOFTWARE.
 
 import PackageDescription
+import Dubaduba
 
 let package = Package(
     name: "Alamofire",
     dependencies : [],
+    dependencies : ["someBadubabuba"],
     exclude: ["Tests"]
 )
